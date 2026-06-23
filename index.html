@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Antônio — Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{font-family:'Inter',sans-serif}body{background:#020617;color:#fff;animation:fi .6s ease-out forwards}
+        @keyframes fi{0%{opacity:0}100%{opacity:1}}
+        .rv{opacity:0;transform:translateY(20px);transition:all .6s cubic-bezier(.25,.46,.45,.94)}
+        .rv-v{opacity:1;transform:translateY(0)}
+        .gt{background:linear-gradient(to bottom right,#d0d7fb,#716afb);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .gc{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(12px);transition:all .5s}
+        .gc:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);transform:translateY(-4px);box-shadow:0 12px 40px -12px rgba(99,102,241,.15)}
+        .st{background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);transition:all .3s}
+        .st:hover{background:rgba(99,102,241,.2);border-color:rgba(99,102,241,.4);transform:translateY(-2px)}
+        .sl{height:1px;background:linear-gradient(to right,transparent,rgba(99,102,241,.3),transparent)}
+        .nb{backdrop-filter:blur(24px);background:rgba(2,6,23,.8);border-bottom:1px solid rgba(255,255,255,.05)}
+        .cl:hover{color:#818cf8;transform:translateX(4px)}html{scroll-behavior:smooth}
+        ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#020617}::-webkit-scrollbar-thumb{background:rgba(99,102,241,.3);border-radius:3px}
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 nb h-16 flex items-center">
+    <div class="max-w-7xl mx-auto w-full px-4 md:px-6 flex items-center justify-between">
+        <a href="#hero" class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-semibold text-sm">P</div>
+            <span class="text-white font-light tracking-wide text-sm hidden sm:block">Pedro Antônio</span>
+        </a>
+        <div class="flex items-center gap-6 md:gap-8 text-sm font-light">
+            <a href="#sobre" class="text-slate-400 hover:text-indigo-400 transition-colors hidden md:block">Sobre</a>
+            <a href="#formacao" class="text-slate-400 hover:text-indigo-400 transition-colors hidden md:block">Formação</a>
+            <a href="#competencias" class="text-slate-400 hover:text-indigo-400 transition-colors hidden md:block">Competências</a>
+            <a href="#projetos" class="text-slate-400 hover:text-indigo-400 transition-colors hidden md:block">Projetos</a>
+            <a href="#contato" class="text-slate-400 hover:text-indigo-400 transition-colors">Contato</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero" class="min-h-screen flex items-center justify-center pt-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 text-center">
+        <div class="rv"><div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/20 bg-indigo-500/5 mb-8">
+            <span class="w-2 h-2 rounded-full bg-emerald-500" style="box-shadow:0 0 8px rgba(16,185,129,.8)"></span>
+            <span class="text-xs font-medium tracking-widest uppercase text-indigo-300">Disponível para oportunidades</span>
+        </div></div>
+        <h1 class="rv" data-delay="100">
+            <span class="block text-4xl sm:text-5xl md:text-7xl font-extralight tracking-tight leading-[1.1] mb-4 text-white/60">Olá, eu sou</span>
+            <span class="block text-5xl sm:text-6xl md:text-8xl font-extralight tracking-tight leading-[1.1] gt">Pedro Antônio</span>
+        </h1>
+        <p class="rv mt-6 text-base md:text-lg font-light text-slate-400 max-w-2xl mx-auto leading-relaxed tracking-wide" data-delay="200">Estudante de Tecnologia da Informação com 16 anos, dedicado ao aprendizado contínuo e ao desenvolvimento de soluções inovadoras.</p>
+        <div class="rv flex flex-wrap items-center justify-center gap-4 mt-10" data-delay="300">
+            <a href="#sobre" class="inline-flex items-center gap-2 px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg transition-all" style="box-shadow:0 0 15px -3px rgba(99,102,241,.6)">Conhecer mais <i data-lucide="arrow-down" class="w-4 h-4"></i></a>
+            <a href="#contato" class="inline-flex items-center gap-2 px-8 py-3 border border-white/10 hover:border-white/20 text-white text-sm font-medium rounded-lg transition-all bg-white/5 hover:bg-white/10">Contato <i data-lucide="mail" class="w-4 h-4"></i></a>
+        </div>
+    </div>
+</section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Info + Contato -->
+<section class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8">
+    <div class="rv gc rounded-2xl p-8" data-delay="0">
+        <div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="user" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-xl font-light tracking-tight">Informações Pessoais</h2></div>
+        <div class="space-y-4">
+            <div class="flex items-center gap-3"><i data-lucide="badge-check" class="w-4 h-4 text-slate-500 shrink-0"></i><div><span class="text-xs font-medium tracking-widest uppercase text-slate-500">Nome</span><p class="text-sm font-light text-slate-300">Pedro Antônio da Cunha Altheman</p></div></div>
+            <div class="flex items-center gap-3"><i data-lucide="calendar" class="w-4 h-4 text-slate-500 shrink-0"></i><div><span class="text-xs font-medium tracking-widest uppercase text-slate-500">Idade</span><p class="text-sm font-light text-slate-300">16 anos</p></div></div>
+            <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-slate-500 shrink-0"></i><div><span class="text-xs font-medium tracking-widest uppercase text-slate-500">Endereço</span><p class="text-sm font-light text-slate-300">Jardim Garcia</p></div></div>
+        </div>
+    </div>
+    <div id="contato" class="rv gc rounded-2xl p-8" data-delay="100">
+        <div class="flex items-center gap-3 mb-6"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="address-book" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-xl font-light tracking-tight">Contatos</h2></div>
+        <div class="space-y-4">
+            <a href="tel:+5519978229682" class="cl flex items-center gap-3 transition-all"><i data-lucide="phone" class="w-4 h-4 text-slate-500 shrink-0"></i><div><span class="text-xs font-medium tracking-widest uppercase text-slate-500">Telefone</span><p class="text-sm font-light text-slate-300">(19) 97822-9682</p></div></a>
+            <a href="mailto:pedroaltheman75@gmail.com" class="cl flex items-center gap-3 transition-all"><i data-lucide="mail" class="w-4 h-4 text-slate-500 shrink-0"></i><div><span class="text-xs font-medium tracking-widest uppercase text-slate-500">E-mail</span><p class="text-sm font-light text-slate-300">pedroaltheman75@gmail.com</p></div></a>
+        </div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Apresentação -->
+<section id="sobre" class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="rv max-w-4xl mx-auto" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="user-circle" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl md:text-3xl font-light tracking-tight">Apresentação Pessoal</h2></div>
+        <div class="gc rounded-2xl p-8 md:p-10 space-y-5 text-sm md:text-base font-light text-slate-400 leading-relaxed tracking-wide">
+            <p>Meu nome é Pedro Antônio da Cunha Altheman, tenho 16 anos e atualmente curso o 2º ano do Ensino Médio Técnico em Tecnologia da Informação no Instituto Educacional Raphael Di Santo. Sou uma pessoa dedicada, responsável e comprometida com meu desenvolvimento acadêmico e profissional.</p>
+            <p>Tenho grande interesse pela área de tecnologia, especialmente por tudo que envolve inovação, aprendizado e desenvolvimento de soluções. Busco constantemente adquirir novos conhecimentos, aprimorar minhas habilidades e evoluir tanto pessoal quanto profissionalmente. Acredito que o aprendizado contínuo é essencial para alcançar bons resultados e construir uma carreira sólida.</p>
+            <p>Sou uma pessoa organizada, determinada e sempre disposta a aprender com novos desafios e experiências. Meu objetivo é crescer na área de tecnologia e me tornar um profissional competente, confiável e preparado para atuar com excelência no mercado de trabalho.</p>
+        </div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Objetivo -->
+<section class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="rv max-w-4xl mx-auto" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="target" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl md:text-3xl font-light tracking-tight">Objetivo deste Portfólio</h2></div>
+        <div class="gc rounded-2xl p-8 md:p-10 space-y-5 text-sm md:text-base font-light text-slate-400 leading-relaxed tracking-wide">
+            <p>Este portfólio tem como principal objetivo apresentar minha trajetória acadêmica, minhas competências, habilidades e experiências desenvolvidas até o momento.</p>
+            <p>Por meio deste documento, busco demonstrar meu comprometimento com os estudos, meu interesse pela área de Tecnologia da Informação e minha dedicação em evoluir continuamente. Este portfólio representa não apenas meus conhecimentos atuais, mas também minha vontade de crescer, aprender e me preparar para futuras oportunidades acadêmicas e profissionais.</p>
+            <p>Meu foco é continuar adquirindo experiência, ampliando meus conhecimentos e desenvolvendo habilidades que contribuam para minha formação pessoal e profissional.</p>
+        </div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Formação -->
+<section id="formacao" class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="rv max-w-4xl mx-auto" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="graduation-cap" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl md:text-3xl font-light tracking-tight">Formação Acadêmica</h2></div>
+        <div class="relative pl-12">
+            <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-indigo-600/20 border-2 border-indigo-500/40 flex items-center justify-center"><i data-lucide="book-open" class="w-4 h-4 text-indigo-400"></i></div>
+            <div class="gc rounded-2xl p-8">
+                <div class="flex flex-wrap items-start justify-between gap-4 mb-3">
+                    <h3 class="text-lg font-light">Ensino Médio Técnico em TI</h3>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-medium text-emerald-400"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Cursando</span>
+                </div>
+                <p class="text-sm font-light text-slate-400 tracking-wide">2º ano — Ensino Médio Técnico em Tecnologia da Informação</p>
+                <p class="text-sm font-light text-indigo-400/70 mt-2 tracking-wide">Instituto Educacional Raphael Di Santo</p>
+            </div>
+        </div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Competências -->
+<section id="competencias" class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="rv max-w-4xl mx-auto" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="cpu" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl md:text-3xl font-light tracking-tight">Competências Técnicas</h2></div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" id="compGrid"></div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Habilidades -->
+<section class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="rv max-w-4xl mx-auto" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="heart-handshake" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl md:text-3xl font-light tracking-tight">Habilidades Pessoais</h2></div>
+        <div class="gc rounded-2xl p-8 md:p-10">
+            <p class="text-sm md:text-base font-light text-slate-400 leading-relaxed tracking-wide mb-8">Além das competências técnicas adquiridas, também possuo habilidades pessoais importantes para o ambiente acadêmico e profissional. Tenho facilidade em manter organização nas minhas tarefas, responsabilidades e projetos, o que me permite trabalhar com mais eficiência e foco. Também possuo boa adaptação ao trabalho em equipe, sabendo colaborar com outras pessoas, compartilhar ideias e contribuir de forma positiva em atividades coletivas.</p>
+            <div class="flex flex-wrap gap-3" id="skillTags"></div>
+        </div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Projetos -->
+<section id="projetos" class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="rv max-w-4xl mx-auto" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="folder-open" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl md:text-3xl font-light tracking-tight">Projetos</h2></div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="rv gc rounded-2xl overflow-hidden" data-delay="0">
+                <div class="h-40 relative overflow-hidden"><img src="https://picsum.photos/seed/websites-dev/600/300.jpg" alt="Sites" class="w-full h-full object-cover opacity-60"><div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div><div class="absolute bottom-3 left-4"><span class="px-2.5 py-1 rounded-md bg-indigo-500/20 border border-indigo-500/30 text-xs font-medium text-indigo-300">Desenvolvimento Web</span></div></div>
+                <div class="p-6"><h3 class="text-base font-light mb-2">Criação de Sites</h3><p class="text-sm font-light text-slate-400 leading-relaxed tracking-wide">Desenvolvimento de diversos sites com diferentes níveis de complexidade, desde páginas estáticas simples até estruturas mais elaboradas, desenvolvendo habilidades em organização visual, estruturação de conteúdo e experiência do usuário.</p></div>
+            </div>
+            <div class="rv gc rounded-2xl overflow-hidden" data-delay="100">
+                <div class="h-40 relative overflow-hidden"><img src="https://picsum.photos/seed/design-canva/600/300.jpg" alt="Apresentações" class="w-full h-full object-cover opacity-60"><div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div><div class="absolute bottom-3 left-4"><span class="px-2.5 py-1 rounded-md bg-indigo-500/20 border border-indigo-500/30 text-xs font-medium text-indigo-300">Design</span></div></div>
+                <div class="p-6"><h3 class="text-base font-light mb-2">Apresentações e Trabalhos Acadêmicos</h3><p class="text-sm font-light text-slate-400 leading-relaxed tracking-wide">Criação de apresentações e trabalhos acadêmicos utilizando ferramentas digitais como o Canva, contribuindo para o desenvolvimento da criatividade, organização e capacidade de comunicação visual.</p></div>
+            </div>
+        </div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Idiomas + Certificações -->
+<section class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-8">
+    <div class="rv" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="languages" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl font-light tracking-tight">Idiomas</h2></div>
+        <div class="gc rounded-2xl p-8">
+            <div class="flex items-center justify-between mb-3"><span class="text-sm font-light">Inglês</span><span class="text-xs font-medium text-indigo-400 tracking-wide">Básico</span></div>
+            <div class="w-full h-2 rounded-full bg-white/5 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-indigo-600 to-indigo-400" style="width:25%"></div></div>
+        </div>
+    </div>
+    <div class="rv" data-delay="100">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="award" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl font-light tracking-tight">Certificações</h2></div>
+        <div class="gc rounded-2xl p-8">
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center shrink-0"><i data-lucide="book-marked" class="w-5 h-5 text-indigo-400"></i></div>
+                <div><h3 class="text-sm font-light mb-1">Curso de Inglês</h3><p class="text-xs font-light text-slate-500 tracking-wide mb-3">Fisk — 8 meses de curso</p><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-medium text-emerald-400"><i data-lucide="check" class="w-3 h-3"></i>Concluído</span></div>
+            </div>
+        </div>
+    </div>
+</div></section>
+
+<div class="sl max-w-3xl mx-auto"></div>
+
+<!-- Objetivos Futuros -->
+<section class="py-20"><div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="rv max-w-4xl mx-auto" data-delay="0">
+        <div class="flex items-center gap-3 mb-8"><div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center"><i data-lucide="rocket" class="w-5 h-5 text-indigo-400"></i></div><h2 class="text-2xl md:text-3xl font-light tracking-tight">Objetivos Futuros</h2></div>
+        <div class="space-y-4" id="objGrid"></div>
+    </div>
+</div></section>
+
+<!-- Footer -->
+<footer class="border-t border-white/5"><div class="max-w-7xl mx-auto px-4 md:px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-semibold text-sm">P</div><span class="text-sm font-light text-slate-500 tracking-wide">Pedro Antônio da Cunha Altheman</span></div>
+    <div class="flex items-center gap-6">
+        <a href="mailto:pedroaltheman75@gmail.com" class="text-slate-500 hover:text-indigo-400 transition-colors"><i data-lucide="mail" class="w-4 h-4"></i></a>
+        <a href="tel:+5519978229682" class="text-slate-500 hover:text-indigo-400 transition-colors"><i data-lucide="phone" class="w-4 h-4"></i></a>
+    </div>
+    <p class="text-xs font-light text-slate-600 tracking-wide">© 2025 — Todos os direitos reservados</p>
+</div></footer>
+
+<script>
+lucide.createIcons();
+
+// Gerar competências via JS
+const comps=[{i:'code-2',t:'Programação'},{i:'headset',t:'Atendimento e suporte'},{i:'smartphone',t:'Configuração de aplicativos'},{i:'hard-drive',t:'Instalação e manutenção'},{i:'monitor',t:'Sistemas de tecnologia'},{i:'pen-line',t:'Redação'}];
+document.getElementById('compGrid').innerHTML=comps.map((c,d)=>`<div class="rv gc rounded-xl p-5 flex items-center gap-4" data-delay="${d*100}"><div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center shrink-0"><i data-lucide="${c.i}" class="w-5 h-5 text-indigo-400"></i></div><span class="text-sm font-light text-slate-300">${c.t}</span></div>`).join('');
+
+// Gerar skill tags via JS
+const skills=['layout-grid','Organização','check-circle','Comprometimento','shield-check','Disciplina','message-circle','Comunicação','users','Cooperação','target','Determinação'];
+let sh='';for(let i=0;i<skills.length;i+=2)sh+=`<span class="st px-4 py-2 rounded-full text-sm font-light text-indigo-300 cursor-default"><span class="flex items-center gap-2"><i data-lucide="${skills[i]}" class="w-3.5 h-3.5"></i>${skills[i+1]}</span></span>`;
+document.getElementById('skillTags').innerHTML=sh;
+
+// Gerar objetivos via JS
+const objs=['Concluir a formação no ensino médio técnico com dedicação, aprofundando conhecimentos em Tecnologia da Informação.','Ingressar em uma faculdade para aprofundar ainda mais os estudos na área de tecnologia e ampliar horizontes profissionais.','Construir uma carreira sólida, conquistando oportunidades profissionais que permitam crescer continuamente na área de tecnologia.','Alcançar um emprego estável em uma área com a qual me identifique, onde eu possa aplicar meus conhecimentos, adquirir experiência e atuar com responsabilidade, dedicação e satisfação.'];
+document.getElementById('objGrid').innerHTML=objs.map((o,d)=>`<div class="rv gc rounded-xl p-6 flex items-start gap-4" data-delay="${d*100}"><div class="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center shrink-0 mt-0.5"><span class="text-sm font-medium text-indigo-400">0${d+1}</span></div><p class="text-sm font-light text-slate-400 leading-relaxed tracking-wide">${o}</p></div>`).join('');
+
+// Re-init icons after dynamic content
+lucide.createIcons();
+
+// Reveal on scroll
+const ro=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){setTimeout(()=>en.target.classList.add('rv-v'),parseInt(en.target.dataset.delay||0));ro.unobserve(en.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+</script>
+</body>
+</html>
